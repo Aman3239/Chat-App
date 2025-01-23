@@ -21,6 +21,10 @@ mongoose.connect("mongodb+srv://aman:aman@cluster0.tsp6y.mongodb.net/?retryWrite
     console.log("Error connecting to the mongoDB")
 })
 
+app.get("/", (req, res) => {
+    res.send("Hello from Vercel and chat app!");
+  });
+
 app.listen(port, () => {
     console.log("Server is running on Port 8000")
 })
